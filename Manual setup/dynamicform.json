@@ -1,0 +1,156 @@
+[
+    {
+      "label": "Details",
+      "fields": [
+        {
+          "key": "employeeType",
+          "templateOptions": {
+            "label": "Account type",
+            "required": true,
+            "useObjects": false,
+            "useDataSource": true,
+            "useFilter": false,
+            "options": [
+              "1111",
+              "2222",
+              "33333"
+            ],
+            "valueField": "Type",
+            "textField": "Name",
+            "dataSourceConfig": {
+              "dataSourceGuid": "1e3a26fe-fe19-4586-8b67-08d81d8f7d8e",
+              "input": {
+                "propertyInputs": []
+              }
+            },
+            "defaultSelectorProperty": "Name"
+          },
+          "type": "dropdown",
+          "summaryVisibility": "Show",
+          "textOrLabel": "text",
+          "requiresTemplateOptions": true
+        },
+        {
+          "key": "givenname",
+          "templateOptions": {
+            "label": "Givenname",
+            "placeholder": "John",
+            "required": true,
+            "minLength": 2
+          },
+          "type": "input",
+          "summaryVisibility": "Show",
+          "requiresTemplateOptions": true
+        },
+        {
+          "key": "middlename",
+          "templateOptions": {
+            "label": "Middle name",
+            "placeholder": "van der"
+          },
+          "type": "input",
+          "summaryVisibility": "Show",
+          "requiresTemplateOptions": true
+        },
+        {
+          "key": "lastname",
+          "templateOptions": {
+            "label": "Last name",
+            "placeholder": "Poel",
+            "required": true,
+            "minLength": 2
+          },
+          "type": "input",
+          "summaryVisibility": "Show",
+          "requiresTemplateOptions": true
+        },
+        {
+          "key": "title",
+          "templateOptions": {
+            "label": "Job title",
+            "placeholder": "Application owner"
+          },
+          "type": "input",
+          "summaryVisibility": "Show",
+          "requiresTemplateOptions": true
+        },
+        {
+          "key": "department",
+          "templateOptions": {
+            "label": "Department",
+            "placeholder": "ICT"
+          },
+          "type": "input",
+          "summaryVisibility": "Show",
+          "requiresTemplateOptions": true
+        }
+      ]
+    },
+    {
+      "label": "Naming",
+      "fields": [
+        {
+          "key": "naming",
+          "templateOptions": {
+            "label": "Naming convention",
+            "required": true,
+            "grid": {
+              "columns": [
+                {
+                  "headerName": "Displayname",
+                  "field": "displayname"
+                },
+                {
+                  "headerName": "Sur Name",
+                  "field": "surName"
+                },
+                {
+                  "headerName": "User Principal Name",
+                  "field": "userPrincipalName"
+                }
+              ],
+              "height": 300,
+              "rowSelection": "single"
+            },
+            "dataSourceConfig": {
+              "dataSourceGuid": "cce0d36a-6474-4121-8b68-08d81d8f7d8e",
+              "input": {
+                "propertyInputs": [
+                  {
+                    "propertyName": "employeeType",
+                    "otherFieldValue": {
+                      "otherFieldKey": "employeeType"
+                    }
+                  },
+                  {
+                    "propertyName": "givenName",
+                    "otherFieldValue": {
+                      "otherFieldKey": "givenname"
+                    }
+                  },
+                  {
+                    "propertyName": "lastName",
+                    "otherFieldValue": {
+                      "otherFieldKey": "lastname"
+                    }
+                  },
+                  {
+                    "propertyName": "middleName",
+                    "otherFieldValue": {
+                      "otherFieldKey": "middlename"
+                    }
+                  }
+                ]
+              }
+            },
+            "useFilter": false,
+            "defaultSelectorProperty": "userPrincipalName",
+            "useDefault": true
+          },
+          "type": "grid",
+          "summaryVisibility": "Show",
+          "requiresTemplateOptions": true
+        }
+      ]
+    }
+  ]

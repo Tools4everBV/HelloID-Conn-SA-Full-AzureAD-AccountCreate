@@ -1,0 +1,16 @@
+[
+    {
+      "Groups": "[{\"Name\": \"TestGroup1\"},{\"Name\": \"TestGroup2\"}]",
+      "Name": "Employee",
+      "Type": "Member",
+      "Organization": "Enyoi",
+      "UPNsuffix": "enyoi.nl"
+    },
+    {
+      "Groups": "[{\"Name\": \"TestGroup1\"},{\"Name\": \"TestGroup2\"}]",
+      "Name": "External",
+      "Type": "Guest",
+      "Organization": "Enyoi",
+      "UPNsuffix": "enyoi.nl"
+    }
+  ]
