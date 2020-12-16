@@ -1,7 +1,7 @@
 #HelloID variables
-$PortalBaseUrl = "https://ramons.helloid.com"
-$apiKey = "EMUFTEVQMYUERBJVWUSAXUWKSUDBRTWB"
-$apiSecret = "nBszZMACJkmzKLHaGrxaJJtLrjpzbtZT"
+$PortalBaseUrl = "https://CUSTOMER.helloid.com"
+$apiKey = "API_KEY"
+$apiSecret = "API_SECRET"
 $delegatedFormAccessGroupNames = @("Users", "HID_administrators")
  
 # Create authorization headers with HelloID API key
