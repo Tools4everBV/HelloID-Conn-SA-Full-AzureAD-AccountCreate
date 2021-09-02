@@ -1,0 +1,176 @@
+[
+    {
+        "label":  "Details",
+        "fields":  [
+                       {
+                           "key":  "employeeType",
+                           "templateOptions":  {
+                                                   "label":  "Account type",
+                                                   "required":  true,
+                                                   "useObjects":  false,
+                                                   "useDataSource":  true,
+                                                   "useFilter":  false,
+                                                   "options":  [
+                                                                   "1111",
+                                                                   "2222",
+                                                                   "33333"
+                                                               ],
+                                                   "valueField":  "Type",
+                                                   "textField":  "Name",
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_0",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "defaultSelectorProperty":  "Name"
+                                               },
+                           "type":  "dropdown",
+                           "summaryVisibility":  "Show",
+                           "textOrLabel":  "text",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  false
+                       },
+                       {
+                           "key":  "givenname",
+                           "templateOptions":  {
+                                                   "label":  "Givenname",
+                                                   "placeholder":  "John",
+                                                   "required":  true,
+                                                   "minLength":  2
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  false
+                       },
+                       {
+                           "key":  "middlename",
+                           "templateOptions":  {
+                                                   "label":  "Middle name",
+                                                   "placeholder":  "van der"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  false
+                       },
+                       {
+                           "key":  "lastname",
+                           "templateOptions":  {
+                                                   "label":  "Last name",
+                                                   "placeholder":  "Poel",
+                                                   "required":  true,
+                                                   "minLength":  2
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  false
+                       },
+                       {
+                           "key":  "title",
+                           "templateOptions":  {
+                                                   "label":  "Job title",
+                                                   "placeholder":  "Application owner"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  false
+                       },
+                       {
+                           "key":  "department",
+                           "templateOptions":  {
+                                                   "label":  "Department",
+                                                   "placeholder":  "ICT"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  false
+                       }
+                   ]
+    },
+    {
+        "label":  "Naming",
+        "fields":  [
+                       {
+                           "key":  "naming",
+                           "templateOptions":  {
+                                                   "label":  "Naming convention",
+                                                   "required":  true,
+                                                   "grid":  {
+                                                                "columns":  [
+                                                                                {
+                                                                                    "headerName":  "Displayname",
+                                                                                    "field":  "displayname"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Surname",
+                                                                                    "field":  "surname"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "User Principal Name",
+                                                                                    "field":  "userPrincipalName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Mail",
+                                                                                    "field":  "mail"
+                                                                                }
+                                                                            ],
+                                                                "height":  300,
+                                                                "rowSelection":  "single"
+                                                            },
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_1",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+                                                                                                                 {
+                                                                                                                     "propertyName":  "employeeType",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "employeeType"
+                                                                                                                                         }
+                                                                                                                 },
+                                                                                                                 {
+                                                                                                                     "propertyName":  "givenName",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "givenname"
+                                                                                                                                         }
+                                                                                                                 },
+                                                                                                                 {
+                                                                                                                     "propertyName":  "lastName",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "lastname"
+                                                                                                                                         }
+                                                                                                                 },
+                                                                                                                 {
+                                                                                                                     "propertyName":  "middleName",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "middlename"
+                                                                                                                                         }
+                                                                                                                 }
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "useFilter":  false,
+                                                   "defaultSelectorProperty":  "userPrincipalName",
+                                                   "useDefault":  true
+                                               },
+                           "type":  "grid",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  true
+                       }
+                   ]
+    }
+]
