@@ -1,18 +1,18 @@
 [
-    {
-        "key":  "Name",
-        "type":  0
-    },
-    {
-        "key":  "Organization",
-        "type":  0
-    },
-    {
-        "key":  "Type",
-        "type":  0
-    },
-    {
-        "key":  "UPNsuffix",
-        "type":  0
-    }
+  {
+    "key": "Name",
+    "type": 0
+  },
+  {
+    "key": "Organization",
+    "type": 0
+  },
+  {
+    "key": "Type",
+    "type": 0
+  },
+  {
+    "key": "UPNsuffix",
+    "type": 0
+  }
 ]

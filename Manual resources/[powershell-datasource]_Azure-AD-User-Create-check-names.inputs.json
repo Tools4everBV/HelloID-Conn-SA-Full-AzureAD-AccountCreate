@@ -1,34 +1,34 @@
 [
-    {
-        "description":  "",
-        "translateDescription":  false,
-        "inputFieldType":  1,
-        "key":  "employeeType",
-        "type":  0,
-        "options":  1
-    },
-    {
-        "description":  "",
-        "translateDescription":  false,
-        "inputFieldType":  1,
-        "key":  "givenName",
-        "type":  0,
-        "options":  1
-    },
-    {
-        "description":  "",
-        "translateDescription":  false,
-        "inputFieldType":  1,
-        "key":  "lastName",
-        "type":  0,
-        "options":  1
-    },
-    {
-        "description":  "",
-        "translateDescription":  false,
-        "inputFieldType":  1,
-        "key":  "middleName",
-        "type":  0,
-        "options":  0
-    }
+  {
+    "description": "",
+    "translateDescription": false,
+    "inputFieldType": 1,
+    "key": "employeeType",
+    "type": 0,
+    "options": 1
+  },
+  {
+    "description": "",
+    "translateDescription": false,
+    "inputFieldType": 1,
+    "key": "givenName",
+    "type": 0,
+    "options": 1
+  },
+  {
+    "description": "",
+    "translateDescription": false,
+    "inputFieldType": 1,
+    "key": "lastName",
+    "type": 0,
+    "options": 1
+  },
+  {
+    "description": "",
+    "translateDescription": false,
+    "inputFieldType": 1,
+    "key": "middleName",
+    "type": 0,
+    "options": 0
+  }
 ]
