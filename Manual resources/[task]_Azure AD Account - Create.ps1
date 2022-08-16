@@ -162,6 +162,26 @@ try{
     $response = Invoke-RestMethod -Uri $createUri -Method POST -Headers $authorization -Body $body -Verbose:$false
 
     Write-Information "AzureAD user [$($account.userPrincipalName)] created successfully"
+    $Log = @{
+        Action            = "CreateAccount" # optional. ENUM (undefined = default) 
+        System            = "AzureActiveDirectory" # optional (free format text) 
+        Message           = "AzureAD user [$($account.userPrincipalName)] created successfully" # required (free format text) 
+        IsError           = $false # optional. Elastic reporting purposes only. (default = $false. $true = Executed action returned an error) 
+        TargetDisplayName = $($account.displayName) # optional (free format text) 
+        TargetIdentifier  = $([string]$response.id) # optional (free format text) 
+    }
+    #send result back  
+    Write-Information -Tags "Audit" -MessageData $log
 }catch{
     Write-Error "Error creating AzureAD user [$($account.userPrincipalName)]. Error: $_"
+    $Log = @{
+        Action            = "CreateAccount" # optional. ENUM (undefined = default) 
+        System            = "AzureActiveDirectory" # optional (free format text) 
+        Message           = "Error creating AzureAD user [$($account.userPrincipalName)]." # required (free format text) 
+        IsError           = $true # optional. Elastic reporting purposes only. (default = $false. $true = Executed action returned an error) 
+        TargetDisplayName = $($account.displayName) # optional (free format text) 
+        TargetIdentifier  = $([string]$response.id) # optional (free format text) 
+    }
+    #send result back  
+    Write-Information -Tags "Audit" -MessageData $log
 }

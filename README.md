@@ -8,6 +8,7 @@ This HelloID Service Automation Delegated Form can create Azure users. The follo
 ## Versioning
 | Version | Description | Date |
 | - | - | - |
+| 1.1.1   | Updated with code for audit logging | 2022/08/16  |
 | 1.1.0   | Updated with code for SA agent | 2022/03/14  |
 | 1.0.1   | Added version number and updated all-in-one script | 2021/11/04  |
 | 1.0.0   | Initial release | 2021/09/02  |
@@ -109,7 +110,7 @@ This Delegated Form uses the following resources in order to run
 
 ### Powershell data source 'Azure-AD-User-Create-check-names'
 
-### Delegated form task 'Azure-AD-user-create'
+### Delegated form task 'Azure AD Account - Create'
 
 ## Getting help
 _If you need help, feel free to ask questions on our [forum](https://forum.helloid.com/forum/helloid-connectors/service-automation/192-helloid-sa-azure-ad-create-user)_

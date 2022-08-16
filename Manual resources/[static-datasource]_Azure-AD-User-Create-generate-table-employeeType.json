@@ -1,14 +1,14 @@
 [
-  {
-    "Name": "Employee",
-    "UPNsuffix": "enyoi.local",
-    "Type": "Member",
-    "Organization": "Enyoi"
-  },
-  {
-    "Name": "External",
-    "UPNsuffix": "enyoi.local",
-    "Type": "Guest",
-    "Organization": "Enyoi"
-  }
+    {
+        "Name":  "Employee",
+        "UPNsuffix":  "devbreekie18.onmicrosoft.com",
+        "Type":  "Member",
+        "Organization":  "T4EJB"
+    },
+    {
+        "Name":  "External",
+        "UPNsuffix":  "devbreekie18.onmicrosoft.com",
+        "Type":  "Guest",
+        "Organization":  "T4EJB"
+    }
 ]
